@@ -16,13 +16,13 @@ require('dotenv').config();
 // } = process.env;
 
 const strangerThingsConfig = {
-  url: REACT_APP_HAWKINS_URL.process.env,
-  timeout: REACT_APP_HAWKINS_TIMEOUT.process.env,
+  url: process.env.REACT_APP_HAWKINS_URL,
+  timeout: process.env.REACT_APP_HAWKINS_TIMEOUT,
 };
 
 const upsideDownConfig = {
-  url: REACT_APP_UPSIDEDOWN_URL.process.env,
-  timeout: REACT_APP_UPSIDEDOWN_TIMEOUT.process.env,
+  url: process.env.REACT_APP_UPSIDEDOWN_URL,
+  timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);
