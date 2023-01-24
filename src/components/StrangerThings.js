@@ -8,21 +8,21 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 
 require('dotenv').config();
 
-// const {
-//   REACT_APP_HAWKINS_URL,
-//   REACT_APP_HAWKINS_TIMEOUT,
-//   REACT_APP_UPSIDEDOWN_URL,
-//   REACT_APP_UPSIDEDOWN_TIMEOUT,
-// } = process.env;
+const {
+  REACT_APP_HAWKINS_URL,
+  REACT_APP_HAWKINS_TIMEOUT,
+  REACT_APP_UPSIDEDOWN_URL,
+  REACT_APP_UPSIDEDOWN_TIMEOUT,
+} = process.env;
 
 const strangerThingsConfig = {
-  url: process.env.REACT_APP_HAWKINS_URL,
-  timeout: process.env.REACT_APP_HAWKINS_TIMEOUT,
+  url: REACT_APP_HAWKINS_URL,
+  timeout: REACT_APP_HAWKINS_TIMEOUT,
 };
 
 const upsideDownConfig = {
-  url: process.env.REACT_APP_UPSIDEDOWN_URL,
-  timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
+  url: REACT_APP_UPSIDEDOWN_URL,
+  timeout: REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);
